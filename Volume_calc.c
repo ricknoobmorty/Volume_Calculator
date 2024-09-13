@@ -29,6 +29,7 @@ int conevol(int h, int r)
 {
     float volume = (1.0 / 3.0) * pi * (r * r) * h;
     printf("The volume of sphere is %.2f\n", volume);
+    printf("The volume of cone is %.2f\n", volume);
 }
 
 int main()
