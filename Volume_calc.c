@@ -22,6 +22,7 @@ int spherevol(int r)
 int cylindervol(int h, int r)
 {
     float volume = pi * (r * r) * h;
+    printf("The volume of cylinder is %.2f\n", volume);
 }
 
 int conevol(int h, int r)
