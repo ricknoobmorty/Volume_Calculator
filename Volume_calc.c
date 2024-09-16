@@ -33,7 +33,7 @@ float conevol(float h, float r)
 
 int main()
 {
-    float shape;
+    int shape;
     float height;
     float length;
     float breadth;
@@ -43,9 +43,9 @@ int main()
     printf("WELCOME TO THE VOLUME CALCULATOR\nPlease enter the corresponding number of the shape you want to calculate volume of\n");
 volumecalc:
     printf("1.Cube\n2.Cuboid\n3.Sphere\n4.Cylinder\n5.Cone\n");
-    scanf("%f", &shape);
+    scanf("%d", &shape);
 
-    if (shape == 1.0)
+    if (shape == 1)
     {
         printf("Please enter the length of the cube\n");
         scanf("%f", &length);
@@ -62,7 +62,7 @@ volumecalc:
             goto end;
         }
     }
-    else if (shape == 2.0)
+    else if (shape == 2)
     {
         printf("Please enter the length of the cuboid\n");
         scanf("%f", &length);
@@ -83,7 +83,7 @@ volumecalc:
             goto end;
         }
     }
-    else if (shape == 3.0)
+    else if (shape == 3)
     {
         printf("Please enter the radius of the sphere\n");
         scanf("%f", &radius);
@@ -100,7 +100,7 @@ volumecalc:
             goto end;
         }
     }
-    else if (shape == 4.0)
+    else if (shape == 4)
     {
         printf("Please enter height of the cylinder\n");
         scanf("%f", &height);
@@ -119,7 +119,7 @@ volumecalc:
             goto end;
         }
     }
-    else if (shape == 5.0)
+    else if (shape == 5)
     {
         printf("Please enter height of the cone\n");
         scanf("%f", &height);
