@@ -1,31 +1,31 @@
 #include <stdio.h>
 #define pi 3.14159265359
 
-int cubevol(int l)
+float cubevol(float l)
 {
     float volume = l * l * l;
     printf("The volume of cube is %.2f\n", volume);
 }
 
-int cuboidvol(int l, int b, int h)
+float cuboidvol(float l, float b, float h)
 {
     float volume = l * b * h;
     printf("The volume of coboid is %.2f\n", volume);
 }
 
-int spherevol(int r)
+float spherevol(float r)
 {
     float volume = (4.0 / 3.0) * pi * (r * r * r);
     printf("The volume of sphere is %.2f\n", volume);
 }
 
-int cylindervol(int h, int r)
+float cylindervol(float h, float r)
 {
     float volume = pi * (r * r) * h;
     printf("The volume of cylinder is %.2f\n", volume);
 }
 
-int conevol(int h, int r)
+float conevol(float h, float r)
 {
     float volume = (1.0 / 3.0) * pi * (r * r) * h;
     printf("The volume of cone is %.2f\n", volume);
