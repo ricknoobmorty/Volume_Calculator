@@ -1,31 +1,42 @@
 #include <stdio.h>
+
 #define pi 3.14159265359
 
-float cubevol(float l)
+//function prototypes
+void cubevol(float);
+void cuboidvol(float, float, float);
+void spherevol(float);
+void cylindervol(float, float);
+void conevol(float, float);
+
+
+//function definitions
+void cubevol(float l)
 {
+    sizeof(int);
     float volume = l * l * l;
     printf("The volume of cube is %.2f\n", volume);
 }
 
-float cuboidvol(float l, float b, float h)
+void cuboidvol(float l, float b, float h)
 {
     float volume = l * b * h;
     printf("The volume of coboid is %.2f\n", volume);
 }
 
-float spherevol(float r)
+void spherevol(float r)
 {
     float volume = (4.0 / 3.0) * pi * (r * r * r);
     printf("The volume of sphere is %.2f\n", volume);
 }
 
-float cylindervol(float h, float r)
+void cylindervol(float h, float r)
 {
     float volume = pi * (r * r) * h;
     printf("The volume of cylinder is %.2f\n", volume);
 }
 
-float conevol(float h, float r)
+void conevol(float h, float r)
 {
     float volume = (1.0 / 3.0) * pi * (r * r) * h;
     printf("The volume of cone is %.2f\n", volume);
@@ -33,9 +44,9 @@ float conevol(float h, float r)
 
 int main()
 {
-    int shape;
-    float height;
     float length;
+    float height;
+    int shape;
     float breadth;
     float radius;
     int choice;
@@ -144,6 +155,7 @@ volumecalc:
         printf("\nPlease enter the number from the given options\n");
         goto volumecalc;
     }
+
 end:
     printf("Bye!, See you soon.\n");
 
